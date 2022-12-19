@@ -24,12 +24,48 @@
 
     @include('layouts.inc.user-navbar')
 
-    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
-        <div class="content text-center">
-            <h1 class="text-white">About us!</h1>
+    <div class="banner-image">
+        <div class="about-section">
+            <h1>About Us</h1>
         </div>
-    </div>
+        <h2 style="text-align:center">Our Team</h2>
+        <div class="row">
+            <div class="column" id="about-column">
+                <div class="card" id="about-card">
+                    <img src="{{ asset('assets/img/profile.webp') }}" alt="Gwen" style="width:100%">
+                    <div class="container" id="about-container">
+                        <h2>Louise Gwendolyn Hidalgo</h2>
+                        <p class="title" id="about-title">Back-End Developer</p>
+                        <p>louisegwendolyn@gmail.com</p>
+                        <p><button class="button" id="about-button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="column" id="about-column">
+                <div class="card" id="about-card">
+                    <img src="{{ asset('assets/img/profile.webp')  }}" alt="Marc" style="width:100%">
+                    <div class="container" id="about-container">
+                        <h2>Marc Joseph Lumba</h2>
+                        <p class="title" id="about-title">Front-End Developer</p>
+                        <p>marcjoseph@gmail.com</p>
+                        <p><button class="button" id="about-button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column" id="about-column">
+                <div class="card" id="about-card">
+                    <img src="{{ asset('assets/img/profile.webp') }}" alt="Julie" style="width:100%">
+                    <div class="container" id="about-container">
+                        <h2>Julie Ann Sapla</h2>
+                        <p class="title" id="about-title">Front-End Developer</p>
+                        <p>julieann@gmail.com</p>
+                        <p><button class="button" id="about-button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     @include('layouts.inc.footer')
